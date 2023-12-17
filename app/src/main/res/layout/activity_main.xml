@@ -8,12 +8,6 @@
         tools:context=".MainActivity"
         android:id="@+id/loginActivity">
 
-    <Button
-            android:text="Olvidaste la contraseña?"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/button3"
-            app:layout_constraintTop_toBottomOf="@+id/layoutContraseña"
-            app:layout_constraintStart_toEndOf="@+id/button2" app:layout_constraintEnd_toEndOf="parent"/>
     <ImageView
             android:layout_width="178dp"
             android:layout_height="162dp"
@@ -48,7 +42,7 @@
     <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/layoutContraseña"
+            android:id="@+id/layoutContrasena"
             app:layout_constraintTop_toBottomOf="@+id/layoutUsuario"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -59,44 +53,47 @@
         <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/password" android:id="@+id/txtContraseña"
+                android:hint="@string/password" android:id="@+id/txtContrasena"
                 android:inputType="textPassword"
         />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-            android:text="Registrar ahora"
+            android:text="Login"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/button2"
-            app:layout_constraintTop_toBottomOf="@+id/layoutContraseña"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSignIn"
+            app:layout_constraintTop_toBottomOf="@+id/layoutContrasena"
             app:layout_constraintStart_toStartOf="parent"/>
     <Button
             android:text="Olvidaste la contraseña?"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/button"
-            app:layout_constraintTop_toBottomOf="@+id/button4"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
-    <Button
-            android:text="Sign in with Google"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/button4"
-            app:layout_constraintTop_toBottomOf="@+id/button5"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            android:layout_height="wrap_content" android:id="@+id/btnOlvideContraseña"
+            app:layout_constraintTop_toBottomOf="@+id/layoutContrasena"
+            app:layout_constraintStart_toEndOf="@+id/btnSignIn" app:layout_constraintEnd_toEndOf="parent"/>
 
     <Button
-            android:text="Sign in with Facebook"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/button5"
-            app:layout_constraintTop_toBottomOf="@+id/button3"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
-    <Space
+            android:text="Registro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/btnRegistro"
+            app:layout_constraintTop_toBottomOf="@+id/btnOlvideContraseña"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+            android:text="Login con Facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btnLoginFacebook"
+            app:layout_constraintTop_toBottomOf="@+id/btnSignIn"
             app:layout_constraintEnd_toEndOf="parent"
-            tools:layout_editor_absoluteY="421dp"/>
+            app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+            android:text="Login con Google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btnLoginGoogle"
+            app:layout_constraintTop_toBottomOf="@+id/btnLoginFacebook"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
