@@ -65,35 +65,42 @@
             android:layout_height="wrap_content"
             android:id="@+id/btnSignIn"
             app:layout_constraintTop_toBottomOf="@+id/layoutContrasena"
-            app:layout_constraintStart_toStartOf="parent"/>
-    <Button
-            android:text="Olvidaste la contraseña?"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/btnOlvideContraseña"
-            app:layout_constraintTop_toBottomOf="@+id/layoutContrasena"
-            app:layout_constraintStart_toEndOf="@+id/btnSignIn" app:layout_constraintEnd_toEndOf="parent"/>
-
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.312"/>
     <Button
             android:text="Registro"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnRegistro"
-            app:layout_constraintTop_toBottomOf="@+id/btnOlvideContraseña"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            android:layout_height="wrap_content" android:id="@+id/btnRegistro"
+            app:layout_constraintTop_toBottomOf="@+id/layoutContrasena"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="68dp" app:layout_constraintStart_toEndOf="@+id/btnSignIn"/>
     <Button
             android:text="Login con Facebook"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/btnLoginFacebook"
             app:layout_constraintTop_toBottomOf="@+id/btnSignIn"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            android:drawableLeft="@drawable/_021_facebook_icon" android:layout_marginTop="64dp"
+            app:layout_constraintHorizontal_bias="0.497"/>
     <Button
             android:text="Login con Google"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/btnLoginGoogle"
             app:layout_constraintTop_toBottomOf="@+id/btnLoginFacebook"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="4dp"
+            app:layout_constraintHorizontal_bias="0.498" android:drawableLeft="@drawable/google24px"/>
+    <TextView
+            android:text="@string/tv_olvidasteContrasena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvOlvidasteContrasena"
+            android:autoLink="all"
+            android:textSize="16sp"
+            android:textColor="@color/colorLink"
+            app:layout_constraintTop_toBottomOf="@+id/btnRegistro"
+            app:layout_constraintBottom_toTopOf="@+id/btnLoginFacebook" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
