@@ -7,4 +7,9 @@
         android:layout_height="match_parent"
         tools:context=".FormularioActivity">
 
+    <TextView
+            android:text="Registro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView4" tools:layout_editor_absoluteY="369dp"
+            tools:layout_editor_absoluteX="164dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
