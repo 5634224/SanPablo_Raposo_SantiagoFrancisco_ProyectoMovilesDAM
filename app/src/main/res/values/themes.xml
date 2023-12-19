@@ -12,8 +12,11 @@
     <!-- Splash screen -->
     <style name="Theme.SanPablo_Raposo_SantiagoFrancisco_ProyectoMoviles.SplashScreen"
            parent="Theme.SanPablo_Raposo_SantiagoFrancisco_ProyectoMoviles">
-        <item name="android:windowSplashScreenBackground">@color/white</item>
+<!--        <item name="android:windowSplashScreenBackground">@color/white</item>-->
         <item name="android:windowSplashScreenAnimatedIcon">@drawable/baseline_tips_and_updates_24</item>
+<!--        <item name="android:windowSplashScreenAnimatedIcon">@drawable/baseline_tips_and_updates_24</item>-->
+<!--        <item name="android:windowSplashScreenBrandingImage">@drawable/baseline_tips_and_updates_24</item>-->
+<!--        <item name="android:windowSplashScreenBackground">@layout/splash_screen</item>-->
         <item name="android:windowSplashScreenAnimationDuration">3000</item>
     </style>
 </resources>
